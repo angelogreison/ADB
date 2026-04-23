@@ -45,7 +45,7 @@ const schedules = [
     startTime: '18:30',
     endTime: '20:30',
     status: 'POCOS_CUPOS',
-    availablePlaces: 2,
+    availablePlaces: 3,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -56,8 +56,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '16:00',
     endTime: '18:00',
-    status: 'TURNO_COMPLETO',
-    availablePlaces: 0,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -68,8 +68,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'DISPONIBLE',
-    availablePlaces: 4,
+    status: 'POCOS_CUPOS',
+    availablePlaces: 3,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -80,8 +80,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '15:30',
     endTime: '17:30',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'TURNO_COMPLETO',
+    availablePlaces: 0,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
