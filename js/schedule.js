@@ -9,7 +9,7 @@ const schedules = [
     startTime: '14:00',
     endTime: '16:00',
     status: 'DISPONIBLE',
-    availablePlaces: 7,
+    availablePlaces: 6,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -45,7 +45,7 @@ const schedules = [
     startTime: '18:30',
     endTime: '20:30',
     status: 'POCOS_CUPOS',
-    availablePlaces: 3,
+    availablePlaces: 2,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -69,7 +69,7 @@ const schedules = [
     startTime: '18:00',
     endTime: '20:00',
     status: 'POCOS_CUPOS',
-    availablePlaces: 3,
+    availablePlaces: 2,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -92,8 +92,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'TURNO_COMPLETO',
+    availablePlaces: 0,
     maxPlaces: 10,
     level: 'Todos los niveles'
   },
@@ -104,8 +104,8 @@ const schedules = [
     category: 'Alfarería',
     startTime: '14:00',
     endTime: '16:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'TURNO_COMPLETO',
+    availablePlaces: 0,
     maxPlaces: 4,
     level: 'Intermedio'
   },
