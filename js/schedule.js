@@ -9,9 +9,10 @@ const schedules = [
     startTime: '14:00',
     endTime: '16:00',
     status: 'DISPONIBLE',
-    availablePlaces: 6,
+    availablePlaces: 5,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const schedules = [
     status: 'ULTIMO_CUPO',
     availablePlaces: 1,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mar'
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ const schedules = [
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
     maxPlaces: 3,
-    level: 'Inicial / Intermedio'
+    level: 'Inicial / Intermedio',
+    teacher: 'Mariana'
   },
   {
     id: 4,
@@ -44,10 +47,11 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:30',
     endTime: '20:30',
-    status: 'POCOS_CUPOS',
-    availablePlaces: 3,
+    status: 'DISPONIBLE',
+    availablePlaces: 5,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 5,
@@ -56,10 +60,11 @@ const schedules = [
     category: 'Modelado',
     startTime: '16:00',
     endTime: '18:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'POCOS_CUPOS',
+    availablePlaces: 2,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 6,
@@ -69,9 +74,10 @@ const schedules = [
     startTime: '18:00',
     endTime: '20:00',
     status: 'POCOS_CUPOS',
-    availablePlaces: 3,
+    availablePlaces: 2,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 7,
@@ -80,10 +86,11 @@ const schedules = [
     category: 'Modelado',
     startTime: '15:30',
     endTime: '17:30',
-    status: 'TURNO_COMPLETO',
-    availablePlaces: 0,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mar'
   },
   {
     id: 8,
@@ -92,10 +99,11 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'POCOS_CUPOS',
+    availablePlaces: 2,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mar'
   },
   {
     id: 9,
@@ -107,7 +115,8 @@ const schedules = [
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
     maxPlaces: 4,
-    level: 'Intermedio'
+    level: 'Intermedio',
+    teacher: 'Giselle'
   },
   {
     id: 10,
@@ -119,7 +128,8 @@ const schedules = [
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
     maxPlaces: 7,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 11,
@@ -131,7 +141,8 @@ const schedules = [
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   },
   {
     id: 12,
@@ -143,7 +154,8 @@ const schedules = [
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
     maxPlaces: 10,
-    level: 'Todos los niveles'
+    level: 'Todos los niveles',
+    teacher: 'Mariana'
   }
 ];
 
@@ -292,7 +304,7 @@ function openModal(schedule) {
   
   // Fill text fields
   document.getElementById('m-title').innerText = schedule.category;
-  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs`;
+  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs (Prof. ${schedule.teacher})`;
   
   // Set plan static text
   const planDisplay = document.getElementById('m-plan-display');
