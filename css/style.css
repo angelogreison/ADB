@@ -2339,9 +2339,9 @@ button {
   }
 
   .hero h1 {
-    font-size: clamp(22px, 6.5vw, 28px);
-    line-height: 1.2;
-    margin-bottom: 12px;
+    font-size: clamp(28px, 8.5vw, 36px);
+    line-height: 1.1;
+    margin-bottom: 16px;
     color: #FFF;
     font-weight: 800;
   }
@@ -2349,7 +2349,7 @@ button {
   .hero-title-line {
     display: block;
     width: 100%;
-    white-space: nowrap; /* Prevent internal wrapping */
+    white-space: normal;
   }
 
   .hero-subtitle-large {
@@ -2396,13 +2396,16 @@ button {
   }
 
   .hero-trust .dot-separator {
-    display: none;
+    display: inline-block;
+    opacity: 0.8;
   }
 
   .trust-pill {
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 4px 8px; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
   }
 
   .hero-social-proof {
