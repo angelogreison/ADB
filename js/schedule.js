@@ -34,8 +34,8 @@ const schedules = [
     category: 'Alfarería',
     startTime: '09:30',
     endTime: '11:30',
-    status: 'TURNO_COMPLETO',
-    availablePlaces: 0,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 3,
     level: 'Inicial / Intermedio',
     teacher: 'Mariana'
@@ -48,7 +48,7 @@ const schedules = [
     startTime: '18:30',
     endTime: '20:30',
     status: 'DISPONIBLE',
-    availablePlaces: 5,
+    availablePlaces: 6,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -61,7 +61,7 @@ const schedules = [
     startTime: '16:00',
     endTime: '18:00',
     status: 'POCOS_CUPOS',
-    availablePlaces: 3,
+    availablePlaces: 4,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -73,8 +73,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'TURNO_COMPLETO',
-    availablePlaces: 0,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -127,7 +127,7 @@ const schedules = [
     endTime: '20:30',
     status: 'TURNO_COMPLETO',
     availablePlaces: 0,
-    maxPlaces: 8,
+    maxPlaces: 9,
     level: 'Todos los niveles',
     teacher: 'Mariana'
   },
