@@ -8,8 +8,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '14:00',
     endTime: '16:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'TURNO_COMPLETO',
+    availablePlaces: 0,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -21,8 +21,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:30',
     endTime: '20:30',
-    status: 'TURNO_COMPLETO',
-    availablePlaces: 0,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 9,
     level: 'Todos los niveles',
     teacher: 'Mar'
