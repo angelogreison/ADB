@@ -29,7 +29,7 @@
   font-family: var(--font-sans);
   color: #FFF;
   background-color: #1F150F; /* Fallback for visibility */
-  background-image: linear-gradient(rgba(31, 21, 15, 0.85), rgba(31, 21, 15, 0.85)), url('../img/studio_interior.webp');
+  background-image: linear-gradient(rgba(31, 21, 15, 0.85), rgba(31, 21, 15, 0.85)), url('../img/Taller%20de%20cer%C3%A1mica%20en%20Caballito%20y%20Almagro.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

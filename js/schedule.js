@@ -47,7 +47,7 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:30',
     endTime: '20:30',
-    status: 'POCOS_CUPOS',
+    status: 'DISPONIBLE',
     availablePlaces: 3,
     maxPlaces: 10,
     level: 'Todos los niveles',
@@ -60,7 +60,7 @@ const schedules = [
     category: 'Modelado',
     startTime: '16:00',
     endTime: '18:00',
-    status: 'POCOS_CUPOS',
+    status: 'DISPONIBLE',
     availablePlaces: 3,
     maxPlaces: 10,
     level: 'Todos los niveles',
@@ -138,7 +138,7 @@ const schedules = [
     category: 'Modelado',
     startTime: '11:00',
     endTime: '13:00',
-    status: 'POCOS_CUPOS',
+    status: 'DISPONIBLE',
     availablePlaces: 3,
     maxPlaces: 10,
     level: 'Todos los niveles',
@@ -304,15 +304,15 @@ function openModal(schedule) {
   
   // Fill text fields
   document.getElementById('m-title').innerText = schedule.category;
-  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs`;
+  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs (Prof. ${schedule.teacher})`;
   
   // Set plan static text
   const planDisplay = document.getElementById('m-plan-display');
   
   if (schedule.category.toLowerCase().includes('modelado')) {
-    planDisplay.innerText = 'Plan Taller ($75.000)';
+    planDisplay.innerText = 'Plan Taller ($72.000)';
   } else if (schedule.category.toLowerCase().includes('alfarería') || schedule.category.toLowerCase().includes('alfareria')) {
-    planDisplay.innerText = 'Plan Fusión ($88.000)';
+    planDisplay.innerText = 'Plan Fusión ($84.000)';
   } else {
     planDisplay.innerText = 'Consultar Plan';
   }
