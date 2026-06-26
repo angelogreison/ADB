@@ -310,9 +310,9 @@ function openModal(schedule) {
   const planDisplay = document.getElementById('m-plan-display');
   
   if (schedule.category.toLowerCase().includes('modelado')) {
-    planDisplay.innerText = 'Plan Taller ($72.000)';
+    planDisplay.innerText = 'Plan Taller ($75.000)';
   } else if (schedule.category.toLowerCase().includes('alfarería') || schedule.category.toLowerCase().includes('alfareria')) {
-    planDisplay.innerText = 'Plan Fusión ($84.000)';
+    planDisplay.innerText = 'Plan Fusión ($87.000)';
   } else {
     planDisplay.innerText = 'Consultar Plan';
   }
