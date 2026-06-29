@@ -47,8 +47,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:30',
     endTime: '20:30',
-    status: 'DISPONIBLE',
-    availablePlaces: 3,
+    status: 'POCOS_CUPOS',
+    availablePlaces: 2,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
