@@ -304,7 +304,7 @@ function openModal(schedule) {
   
   // Fill text fields
   document.getElementById('m-title').innerText = schedule.category;
-  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs (Prof. ${schedule.teacher})`;
+  document.getElementById('m-subtitle').innerText = `${schedule.day} de ${schedule.startTime} - ${schedule.endTime}hs`;
   
   // Set plan static text
   const planDisplay = document.getElementById('m-plan-display');
