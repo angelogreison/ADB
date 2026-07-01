@@ -73,8 +73,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'DISPONIBLE',
-    availablePlaces: 3,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -112,8 +112,8 @@ const schedules = [
     category: 'Alfarería',
     startTime: '14:00',
     endTime: '16:00',
-    status: 'POCOS_CUPOS',
-    availablePlaces: 2,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 4,
     level: 'Intermedio',
     teacher: 'Giselle'
