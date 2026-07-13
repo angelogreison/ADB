@@ -8,8 +8,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '14:00',
     endTime: '16:00',
-    status: 'DISPONIBLE',
-    availablePlaces: 3,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
@@ -21,8 +21,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:30',
     endTime: '20:30',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'POCOS_CUPOS',
+    availablePlaces: 2,
     maxPlaces: 9,
     level: 'Todos los niveles',
     teacher: 'Mar'
@@ -61,7 +61,7 @@ const schedules = [
     startTime: '16:00',
     endTime: '18:00',
     status: 'DISPONIBLE',
-    availablePlaces: 3,
+    availablePlaces: 4,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Pame'
@@ -73,8 +73,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '18:00',
     endTime: '20:00',
-    status: 'POCOS_CUPOS',
-    availablePlaces: 2,
+    status: 'ULTIMO_CUPO',
+    availablePlaces: 1,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Pame'
@@ -151,8 +151,8 @@ const schedules = [
     category: 'Modelado',
     startTime: '14:00',
     endTime: '16:00',
-    status: 'ULTIMO_CUPO',
-    availablePlaces: 1,
+    status: 'TURNO_COMPLETO',
+    availablePlaces: 0,
     maxPlaces: 10,
     level: 'Todos los niveles',
     teacher: 'Mariana'
