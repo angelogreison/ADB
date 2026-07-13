@@ -302,13 +302,15 @@
       background-color: #B04A33;
       color: var(--cream, #fdf6ee);
       overflow: hidden;
-      display: flex;
-      align-items: center;
+      position: relative;
     }
     .marquee-track {
       display: flex;
+      align-items: center;
+      height: 100%;
       white-space: nowrap;
       width: max-content;
+      flex-shrink: 0;
       animation: marquee-scroll 35s linear infinite;
       will-change: transform;
     }
