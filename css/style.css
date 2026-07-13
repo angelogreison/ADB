@@ -2699,7 +2699,7 @@ img[loading="lazy"] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
+  *:not(.marquee-track):not(.marquee-content),
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
