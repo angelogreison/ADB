@@ -883,32 +883,30 @@ button {
   box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.3), inset -20px 0 20px -20px rgba(0, 0, 0, 0.3);
 }
 
-.marquee-content {
+.marquee-track {
   display: flex;
   white-space: nowrap;
-  animation: marquee 40s linear infinite;
+  animation: marquee-scroll 35s linear infinite;
+  will-change: transform;
 }
 
-.marquee-content span {
+.marquee-track span {
   font-family: var(--font-montserrat);
   font-weight: 500;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 30px;
-  /* spacing between items implicitly via padding */
+  flex-shrink: 0;
 }
 
-@keyframes marquee {
+@keyframes marquee-scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
-
-  /* JS will duplicate content to allow -50% seamless loop */
 }
 
 /* =========================================================================
