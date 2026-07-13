@@ -299,29 +299,27 @@
     .marquee-strip {
       width: 100%;
       height: 52px;
+      line-height: 52px;
       background-color: #B04A33;
       color: var(--cream, #fdf6ee);
       overflow: hidden;
       position: relative;
+      white-space: nowrap;
     }
     .marquee-track {
-      display: flex;
-      align-items: center;
-      height: 100%;
+      display: inline-block;
       white-space: nowrap;
-      width: max-content;
-      flex-shrink: 0;
       animation: marquee-scroll 35s linear infinite;
       will-change: transform;
     }
     .marquee-track span {
+      display: inline-block;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 2px;
       padding: 0 30px;
-      flex-shrink: 0;
     }
     @keyframes marquee-scroll {
       from { transform: translateX(0); }
