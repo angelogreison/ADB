@@ -147,4 +147,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* =========================================================================
+     8. META PIXEL: WHATSAPP BUTTON TRACKING ('Contact')
+     ========================================================================= */
+  const waLinks = document.querySelectorAll('a[href*="wa.me"]');
+  waLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+        console.log('Fired fbq track Contact');
+      }
+    });
+  });
+
 });

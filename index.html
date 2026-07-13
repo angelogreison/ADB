@@ -1147,8 +1147,8 @@
     };
   </script>
 
-  <script src="js/main.js?v=202607131627"></script>
-  <script src="js/schedule.js?v=202607131627"></script>
+  <script src="js/main.js?v=202607131647"></script>
+  <script src="js/schedule.js?v=202607131647"></script>
 
   <!-- OVERRIDE de handleBooking - DESPUÉS de schedule.js, usa EMOJIS globales -->
   <script>
@@ -1175,6 +1175,10 @@
         + window.EMOJIS.gem + ' Plan: ' + plan;
 
       console.log('WhatsApp Message:', message);
+
+      if (typeof fbq === 'function') {
+        fbq('track', 'CompleteRegistration');
+      }
 
       var waUrl = 'https://wa.me/5491156206435?text=' + encodeURIComponent(message);
       window.open(waUrl, '_blank');

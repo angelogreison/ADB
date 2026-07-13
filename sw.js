@@ -1,4 +1,4 @@
-const CACHE_NAME = 'artesana-del-barro-v10';
+const CACHE_NAME = 'artesana-del-barro-v11';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
